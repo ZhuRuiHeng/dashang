@@ -1,0 +1,46 @@
+<!--pages/phone/phone.wxml-->
+<view class="container page__bd">
+	<view style="margin:19px 0;">
+		<image src="../img/dingkuang.png" style="width:256px;height:145px;margin: 0 auto;display:block"></image>
+	</view>
+	<view style="color: #ffbc9b;text-align: center;">
+		选一张照片，朋友给我发红包才能看
+	</view>
+	<view style="margin:19px 0;">
+		<form report-submit="">
+				<button plain="" class="formidBtn" form-type="submit" style="border:none;" bindtap='upPhoto'>
+					<image src="../img/xuanzezhaopian.png" style="width:280px;height:185px;margin: 0 auto;"></image>
+				</button>
+		</form>
+	</view>
+	<view class="zan-font-12" style="color: #ffbc9b;text-align: center;">
+		(发布色情、反动、低俗内容的，不允许提现)
+	</view>
+</view>
+<!--弹窗  -->
+<view class="zan-dialog zan-dialog--show" wx:if="{{dialog}}">
+	<view class="zan-dialog__mask">	</view>
+	<view class="zan-dialog__container flex_col_center" style="background-color:#f1f1f1;height:250px;bottom:201px;">
+		<form id="formSubmit" report-submit="" style="width: 100%;">
+			 <view style="text-align:right;" bindtap='close'>
+            <image src="../img/guanbi6.png" 
+                   style="width:12px;height: 12px;margin: 9px 9px 0px 0;"></image>
+				</view>
+				<view class="flex_col_center" style="padding:9px;margin:9px 19px;color:#333;background-color: #fff;">
+					<text>	打赏范围：</text>
+					<input maxlength="4" name="min" placeholder="1" type="number" bindinput='min' value='' />元 ~
+					<input maxlength="10" name="max" placeholder="10" type="number" bindinput='max' value=''/>元
+				</view>
+				<view style="font-size:10pt;color:#ff8765;">
+					朋友查看时，打赏金额在以上范围随机生成
+				</view>
+				<view class="flex_center" style="padding:0px 0 9px 9px;margin:9px 19px 9px 19px;color:#333;background-color: #fff;text-align: left;">
+					<input bindinput="bindContent" focus="" maxlength="18" name="desc" value='{{desc}}'
+					placeholder="加一句描述，吸引朋友打赏" style="width:390rpx;" />	
+					<image bindtap='actionSheetTap' src="../img/xiala_2.png" class="updown"></image>
+				</view>
+				<button class="weui-btn" form-type="submit" bindtap='next' style="width: 80%;background-color: #e8542c;"
+				type="primary">	下一步	</button>
+		</form>
+	</view>
+</view>

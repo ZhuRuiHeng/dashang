@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/more/more",
+    "pages/photo/photo",
+    "pages/video/video",
+    "pages/poster/poster",
+    "pages/seen/seen",
+    "pages/my/my",
+    "pages/tixian/tixian",
+    "pages/keep/keep",
+    "pages/adver/adver"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#ff5656",
+    "backgroundColor": "#fff",
+    "borderStyle": "transparent",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/img/home-icon.png",
+        "selectedIconPath": "/pages/img/home-icon-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/pages/img/wode.png",
+        "selectedIconPath": "/pages/img/wodeb.png"
+      },       
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多好玩",
+        "iconPath": "/pages/img/more.png",
+        "selectedIconPath": "/pages/img/more_hover.png"
+      }
+    ]
+  }
+}

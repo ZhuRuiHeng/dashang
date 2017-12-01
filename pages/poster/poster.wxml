@@ -1,0 +1,12 @@
+<!--pages/poster/poster.wxml-->
+<view class='posterImg'>
+    <image class="poster" bindtap="prewImg" src="{{imgUrl}}"></image>
+</view>
+<view class="share-btn">
+    <button form-type="submit" class="btn btn-null btn-green" open-type="share">
+        <image src="../img/weixin6.png" mode='widthFix'></image>转发到聊天
+    </button>
+    <button form-type="submit" class="btn btn-null btn-green3" bindtap='downLoad' style='background:#fff;color:#000'>
+      <image src="../img/pyq2.png" mode='widthFix'></image>保存分享海报
+    </button>
+</view>

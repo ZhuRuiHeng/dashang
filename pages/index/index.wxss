@@ -1,0 +1,52 @@
+/**index.wxss**/
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding:  0;
+  box-sizing: border-box;
+} 
+.header{
+  width: 100%;   
+  margin: 0 auto; 
+  text-align: center; 
+  border-bottom:1px solid #ddd;                         
+}
+.header image{
+  width: 60%;
+  margin: 0 auto;
+
+}
+.content .red{
+  border:1px solid #ddd;
+  margin: 20rpx 0;
+  border-radius: 8rpx;
+}
+.content .red image{
+    width:300rpx;
+    margin-left: 40rpx;
+}
+@keyframes kf-marque-animation{ 0% { transform: translateX(0); } 100% { transform: translateX(-33.3%); } }
+.marquee{
+    width: 90%;
+    margin: 0 auto;
+    height: 44px;
+    line-height: 44px;
+    background: #fff;
+    border: none;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    position: relative;
+    font-size: 28rpx;
+}
+.marquee .content{
+    display: inline-block;
+    position: relative;
+    padding-right: 0px;
+    animation: kf-marque-animation 20s linear infinite;
+    white-space: nowrap;
+}

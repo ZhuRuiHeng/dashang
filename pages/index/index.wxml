@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+     <view class="marquee">
+        <view class="content">
+            <text>{{broadcasting}}</text> <text style="display: inline-block; width: 5em;"></text>
+            <text>{{broadcasting}}</text> <text style="display: inline-block; width: 5em;"></text>
+            <text>{{broadcasting}}</text> <text style="display: inline-block; width: 5em;"></text>
+        </view>
+    </view>
+    <view class='header'>
+        <image src="../img/logo.png" mode="widthFix"></image>
+    </view>
+    <view class='content'>
+        <view class='red' bindtap='photo'>
+            <image src="../img/photo.png" mode="widthFix"></image>
+        </view>
+        <view class='red' bindtap='video'>
+            <image src="../img/video.png" mode="widthFix"></image>
+        </view>
+    </view>
+</view>

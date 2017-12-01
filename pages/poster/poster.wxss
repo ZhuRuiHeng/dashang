@@ -1,0 +1,57 @@
+.share-btn{ text-align: center; }
+.share-btn button.btn{ width: 288px; display: inline-block; text-align: center; }
+.logo{ text-align: center; position: fixed; bottom: 24px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); font-size: 24rpx;}
+.logo .color{background: #00ff66;color:#fff;padding:0 4rpx;margin-right:4rpx;font-size: 20rpx;border-radius: 4rpx;}
+.share-img image{
+  width:90%;
+  margin: 0 auto;
+}
+button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #1AAD16;
+}
+button:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.share-btn button image{
+    width:40rpx;
+    height: 40rpx;
+    position: relative;
+    top: 6rpx;
+    right:10rpx;
+}
+.poster{
+  width: 390rpx;
+	height: 688rpx;
+	margin:0 auto 116rpx auto;
+	display: block;
+}
+.btn-green3{
+  margin-top: 30rpx;
+}

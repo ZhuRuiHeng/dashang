@@ -1,0 +1,20 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+    <view class='avatarUrl'>
+        <image class="niceImg"
+        src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIjNvnBqkvMeR1cMYlhbia2bn2lzgLQDQJXwLSPxfEVx7JTRa3LBKoD1fn4NMrjaJiaMk0mIkcdPkvA/0" mode='widthFix'></image>
+        <view class='title'>我的余额</view>
+        <view class='money'>￥{{allMoney}}</view>
+    </view>
+    <view class="share-btn">
+        <button form-type="submit" class="btn btn-null btn-green" bindtap='tixian'>提现到微信钱包</button>
+        <button form-type="submit" class="btn btn-null btn-green3" bindtap='mingxi' style='background:#fff;color:#000'>收支明细</button>
+    </view>
+    <view class='notice'>
+        <view>温馨提示：</view>
+        <view>1、单笔提现金额不少于2元；</view>
+        <view>2、提现服务费5%（含微信支付手续费）；</view>
+        <view>3、提现金额将转入您的微信钱包中，处理时间为每天09:00~18:00；</view>
+        <view>4、发布色情、反动、低俗内容的，不允许提现；</view>
+    </view>
+</view>

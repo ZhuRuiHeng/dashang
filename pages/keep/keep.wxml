@@ -1,0 +1,31 @@
+<!--pages/keep/keep.wxml-->
+<view class="container">
+    <view class='noOrder' wx:if="{{listAll==false}}">
+        <view class="noOrder1">
+            <image style='width:120rpx;height:120rpx;' src="../img/null.png"  mode='widthFix'></image>
+        </view>
+        <view class="noOrder2" style="font-size:26rpx;text-align:center;padding:20rpx;margin-top:0;box-sizing:border-box;">
+            还没有账单呢！
+        </view>
+    </view>
+    <!--wx:else  -->
+   <view class="tableCell" wx:for="{{listAll}}">
+        <view class="cellLeft">
+          <view class="cellname">
+          <!-- apply_cash提现 get_red_packeth获得红包 recharge充值 sent_red_packet发红包 -->
+            <text wx:if="{{item.channel_type=='apply_cash'}}">提现</text>
+            <text wx:if="{{item.channel_type=='get_red_packet'}}">收到红包</text>
+            <text wx:if="{{item.channel_type=='recharge'}}">充值</text>
+            <text wx:if="{{item.channel_type=='sent_red_packet'}}">发出红包</text>
+          </view>
+          <view class="cellTime">	{{item.add_time}}</view>
+        </view>
+        <view class="cellMoney" style="color:#1aad19">	
+          <text wx:if="{{item.flow_type=='plus'}}">+ </text> 
+          <text wx:if="{{item.flow_type=='minus'}}">- </text> 
+          {{item.money}}
+        </view>
+    </view>
+   
+</view>
+
